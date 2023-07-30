@@ -26,6 +26,15 @@ router.get("/", async (req, res) => {
   }
 });
 
+router.get("/id", async (req, res) => {
+  try {
+    const users = await UserModel.find({}, "id");
+    res.status(200).send({ message: "user fetch succesfully", data: users });
+  } catch (error) {
+    res.status(500).send({ message: "Server Error", data: [] });
+  }
+});
+
 router.post("/create", async (req, res) => {
   try {
     const user = new UserModel({ ...req.body });

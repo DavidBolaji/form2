@@ -2,7 +2,11 @@ const mongoose = require("../db/mongoose");
 
 const userSchema = new mongoose.Schema(
   {
-    id: { type: String, required: [true, "Please provide the user ID."] },
+    id: {
+      type: String,
+      required: [true, "Please provide the user ID."],
+      unique: true,
+    },
     sex: { type: String, required: [true, "Please provide the sex."] },
     phoneNumber: {
       type: String,
