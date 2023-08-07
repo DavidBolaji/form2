@@ -5,6 +5,8 @@ const { UserModel } = require("./model/user");
 const app = express();
 const router = express.Router();
 const cors = require("cors");
+const pool = require("./db/mysql");
+const User = require("./model/base");
 
 const PORT = process.env.PORT || 5000;
 
@@ -17,32 +19,80 @@ app.use(
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-router.get("/", async (req, res) => {
+router.get("/lga", async (req, res) => {
   try {
-    const users = await UserModel.find({});
-    res.status(200).send({ message: "user fetch succesfully", data: users });
+    await User.findAll("lga", (result) => {
+      res.status(200).send({ message: "user fetch succesfully", data: result });
+    });
   } catch (error) {
     res.status(500).send({ message: "Server Error", data: [] });
   }
 });
 
-router.get("/id", async (req, res) => {
+router.get("/middle", async (req, res) => {
   try {
-    const users = await UserModel.find({}, "id");
-    res.status(200).send({ message: "user fetch succesfully", data: users });
+    await User.findAll("middle", (result) => {
+      res.status(200).send({ message: "user fetch succesfully", data: result });
+    });
   } catch (error) {
     res.status(500).send({ message: "Server Error", data: [] });
   }
 });
 
-router.post("/create", async (req, res) => {
+router.get("/subeb", async (req, res) => {
   try {
-    const user = new UserModel({ ...req.body });
-    await user.save();
-    res.status(201).send({ message: "user created succesfully", data: user });
+    await User.findAll("subeb", (result) => {
+      res.status(200).send({ message: "user fetch succesfully", data: result });
+    });
   } catch (error) {
     res.status(500).send({ message: "Server Error", data: [] });
   }
+});
+
+router.get("/phcb", async (req, res) => {
+  try {
+    await User.findAll("phcb", (result) => {
+      res.status(200).send({ message: "user fetch succesfully", data: result });
+    });
+  } catch (error) {
+    res.status(500).send({ message: "Server Error", data: [] });
+  }
+});
+
+router.post("/create/lga", async (req, res) => {
+  const { staffId, sex, phoneNumber, penNumber, LGA, pfa } = req.body;
+  let lga = new User(staffId, sex, phoneNumber, penNumber, LGA, pfa, "lga");
+  lga = await lga.save();
+  res.status(201).send({ message: "user created successfully", data: lga });
+});
+
+router.post("/create/middle", async (req, res) => {
+  const { staffId, sex, phoneNumber, penNumber, LGA, pfa } = req.body;
+  let middle = new User(
+    staffId,
+    sex,
+    phoneNumber,
+    penNumber,
+    LGA,
+    pfa,
+    "middle"
+  );
+  middle = await middle.save();
+  res.status(201).send({ message: "user created successfully", data: middle });
+});
+
+router.post("/create/subeb", async (req, res) => {
+  const { staffId, sex, phoneNumber, penNumber, LGA, pfa } = req.body;
+  let subeb = new User(staffId, sex, phoneNumber, penNumber, LGA, pfa, "subeb");
+  subeb = await subeb.save();
+  res.status(201).send({ message: "user created successfully", data: subeb });
+});
+
+router.post("/create/phcb", async (req, res) => {
+  const { staffId, sex, phoneNumber, penNumber, LGA, pfa } = req.body;
+  let phcb = new User(staffId, sex, phoneNumber, penNumber, LGA, pfa, "phcb");
+  phcb = await phcb.save();
+  res.status(201).send({ message: "user created successfully", data: phcb });
 });
 
 app.use("/api/v1/users", router);
