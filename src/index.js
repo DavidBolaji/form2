@@ -95,6 +95,54 @@ router.post("/create/phcb", async (req, res) => {
   res.status(201).send({ message: "user created successfully", data: phcb });
 });
 
+router.delete("/delete/lga/:id", async (req, res) => {
+  const {id} = req.params;
+  console.log(id)
+  try {
+    await User.delete("lga", id, (result) => {
+      res.status(200).send({ message: "user fetch succesfully", data: result });
+    });
+  } catch (error) {
+    res.status(500).send({ message: "Server Error", data: [] });
+  }
+});
+
+router.delete("/delete/middle/:id", async (req, res) => {
+  const {id} = req.params;
+  console.log(id)
+  try {
+    await User.delete("lga", id, (result) => {
+      res.status(200).send({ message: "user fetch succesfully", data: result });
+    });
+  } catch (error) {
+    res.status(500).send({ message: "Server Error", data: [] });
+  }
+});
+
+router.delete("/delete/subeb/:id", async (req, res) => {
+  const {id} = req.params;
+  console.log(id)
+  try {
+    await User.delete("lga", id, (result) => {
+      res.status(200).send({ message: "user fetch succesfully", data: result });
+    });
+  } catch (error) {
+    res.status(500).send({ message: "Server Error", data: [] });
+  }
+});
+
+router.delete("/delete/phcb/:id", async (req, res) => {
+  const {id} = req.params;
+  console.log(id)
+  try {
+    await User.delete("lga", id, (result) => {
+      res.status(200).send({ message: "user fetch succesfully", data: result });
+    });
+  } catch (error) {
+    res.status(500).send({ message: "Server Error", data: [] });
+  }
+});
+
 app.use("/api/v1/users", router);
 
 app.listen(PORT, async () => {

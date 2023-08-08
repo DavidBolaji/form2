@@ -46,6 +46,15 @@ class User {
       cb(result);
     });
   }
+
+  static async delete(path, id, cb) {
+    let sql = `DELETE FROM ${path} WHERE id = ?`;
+
+    pool.query(sql, [id], (err, result) => {
+      if (err) return err;
+      cb(result);
+    });
+  }
 }
 
 module.exports = User;
