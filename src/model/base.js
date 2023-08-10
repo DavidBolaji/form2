@@ -55,6 +55,7 @@ class User {
       cb(result);
     });
   }
+
 }
 
 module.exports = User;
