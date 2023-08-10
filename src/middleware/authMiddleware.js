@@ -13,8 +13,10 @@ const auth = (req, res, next) => {
         return res.status(401).send({ message: "Unauthorized" });
       }
       if (
-        result.email !== process.env.EMAIL ||
-        result.email !== process.env.EMAIL2
+        !(
+          result.email !== process.env.EMAIL ||
+          result.email !== process.env.EMAIL2
+        )
       ) {
         return res.status(401).send({ message: "Unauthorized" });
       }
