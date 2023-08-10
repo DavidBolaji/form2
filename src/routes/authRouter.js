@@ -26,8 +26,8 @@ authRouter.post("/auth/signup", async (req, res) => {
     if (result === "error") {
       return res.status(400).send({ message: "Signup failed", data: {} });
     }
+    res.status(200).send({ message: "signup successful" });
   });
-  res.status(200).send({ message: "signup successful" });
 });
 
 module.exports = authRouter;
