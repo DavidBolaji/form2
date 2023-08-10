@@ -23,7 +23,7 @@ phcbRouter.post("/create/phcb", async (req, res) => {
 phcbRouter.delete("/delete/phcb/:id", auth, async (req, res) => {
   const { id } = req.params;
   try {
-    await User.delete("lga", id, (result) => {
+    await User.delete("phcb", id, (result) => {
       res.status(200).send({ message: "user fetch succesfully", data: result });
     });
   } catch (error) {

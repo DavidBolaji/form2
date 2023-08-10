@@ -23,7 +23,7 @@ subebeRouter.post("/create/subeb", async (req, res) => {
 subebeRouter.delete("/delete/subeb/:id", auth, async (req, res) => {
   const { id } = req.params;
   try {
-    await User.delete("lga", id, (result) => {
+    await User.delete("subeb", id, (result) => {
       res.status(200).send({ message: "user fetch succesfully", data: result });
     });
   } catch (error) {

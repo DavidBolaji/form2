@@ -31,7 +31,7 @@ middleRouter.post("/create/middle", async (req, res) => {
 middleRouter.delete("/delete/middle/:id", auth, async (req, res) => {
   const { id } = req.params;
   try {
-    await User.delete("lga", id, (result) => {
+    await User.delete("middle", id, (result) => {
       res.status(200).send({ message: "user fetch succesfully", data: result });
     });
   } catch (error) {
