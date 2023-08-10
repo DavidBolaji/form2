@@ -1,6 +1,7 @@
 const dotenv = require("dotenv");
 dotenv.config();
 const express = require("express");
+const fs = require("fs");
 const app = express();
 
 const cors = require("cors");
@@ -10,8 +11,13 @@ const phcbRouter = require("./routes/phcbRoutes");
 const subebeRouter = require("./routes/subebRoute");
 const middleRouter = require("./routes/middleRoute");
 const authRouter = require("./routes/authRouter");
+const morgan = require("morgan");
+const path = require("path");
 
 const PORT = process.env.PORT || 5000;
+var accessLogStream = fs.createWriteStream(path.join(__dirname, "access.log"), {
+  flags: "a",
+});
 
 app.use(
   cors({
@@ -19,8 +25,31 @@ app.use(
   })
 );
 
+morgan.token("body", (req) => {
+  return req.body;
+});
+
+app.use(
+  morgan(":method :url :status :response-time ms :date[web] - :body", {
+    stream: accessLogStream,
+  })
+);
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
+app.get("/api/v1/log", (req, res) => {
+  const filePath = path.join(__dirname, "access.log"); // Update with your file's path
+
+  fs.readFile(filePath, "utf8", (err, data) => {
+    if (err) {
+      console.error("Error reading the file:", err);
+      res.status(500).send("An error occurred while reading the file.");
+    } else {
+      res.send(data);
+    }
+  });
+});
+
 app.use("/api/v1/users", lgaRouter);
 app.use("/api/v1/users", middleRouter);
 app.use("/api/v1/users", phcbRouter);
