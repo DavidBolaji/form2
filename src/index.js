@@ -26,11 +26,11 @@ app.use(
 );
 
 morgan.token("body", (req) => {
-  return req.body;
+  return JSON.stringify(req.body);
 });
 
 app.use(
-  morgan(":method :url :status :response-time ms :date[web] - :body", {
+  morgan(":method :url :status :response-time ms :date[web] - :body\n", {
     stream: accessLogStream,
   })
 );
