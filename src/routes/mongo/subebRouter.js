@@ -24,7 +24,7 @@ subebRouter.post("/create/subeb", async (req, res) => {
   
 });
 
-subebRouter.delete("/delete/subeb/:id", auth, async (req, res) => {
+subebRouter.delete("/delete/subeb/:_id", auth, async (req, res) => {
   const { _id } = req.params;
   try {
     const result = await lgaModel.deleteOne({ _id: { $eq: _id } });
