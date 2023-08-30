@@ -27,7 +27,7 @@ phcbRouter.post("/create/phcb", async (req, res) => {
 phcbRouter.delete("/delete/phcb/:_id", auth, async (req, res) => {
   const { _id } = req.params;
   try {
-    const result = await lgaModel.deleteOne({ _id: { $eq: _id } });
+    const result = await phcbModel.deleteOne({ _id: { $eq: _id } });
     res.status(200).send({ message: "user fetch succesfully", data: result });
   } catch (error) {
     res.status(500).send({ message: "Server Error", data: [] });
