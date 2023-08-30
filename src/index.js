@@ -6,15 +6,22 @@ const app = express();
 
 const cors = require("cors");
 
-const lgaRouter = require("./routes/lgaRoutes");
-const phcbRouter = require("./routes/phcbRoutes");
-const subebeRouter = require("./routes/subebRoute");
-const middleRouter = require("./routes/middleRoute");
-const authRouter = require("./routes/authRouter");
+// const lgaRouter = require("./routes/lgaRoutes");
+// const phcbRouter = require("./routes/phcbRoutes");
+// const subebeRouter = require("./routes/subebRoute");
+// const middleRouter = require("./routes/middleRoute");
+// const authRouter = require("./routes/authRouter");
+const lgaRouter = require("./routes/mongo/lgaRouter");
+const phcbRouter = require("./routes/mongo/phcbRouter");
+const subebeRouter = require("./routes/mongo/subebRouter");
+const middleRouter = require("./routes/mongo/middleRouter");
+const authRouter = require("./routes/mongo/authRouter");
 const morgan = require("morgan");
 const path = require("path");
+const con = require("./db/mongoose");
 
 const PORT = process.env.PORT || 5000;
+
 var accessLogStream = fs.createWriteStream(path.join(__dirname, "access.log"), {
   flags: "a",
 });
@@ -49,7 +56,7 @@ app.get("/api/v1/log", (req, res) => {
     }
   });
 });
-
+con();
 app.use("/api/v1/users", lgaRouter);
 app.use("/api/v1/users", middleRouter);
 app.use("/api/v1/users", phcbRouter);

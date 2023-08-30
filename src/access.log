@@ -1,0 +1,250 @@
+GET /api/v1/users/lga 200 304.714 ms Wed, 30 Aug 2023 11:35:49 GMT - {}
+
+GET /api/v1/users/lga 200 290.577 ms Wed, 30 Aug 2023 11:35:49 GMT - {}
+
+GET /api/v1/users/lga 304 321.233 ms Wed, 30 Aug 2023 11:38:19 GMT - {}
+
+GET /api/v1/users/lga 200 314.304 ms Wed, 30 Aug 2023 11:38:19 GMT - {}
+
+GET /api/v1/users/middle 200 296.698 ms Wed, 30 Aug 2023 11:38:37 GMT - {}
+
+GET /api/v1/users/middle 200 315.403 ms Wed, 30 Aug 2023 11:38:37 GMT - {}
+
+GET /api/v1/users/subeb 200 323.057 ms Wed, 30 Aug 2023 11:38:41 GMT - {}
+
+GET /api/v1/users/subeb 200 294.569 ms Wed, 30 Aug 2023 11:38:41 GMT - {}
+
+GET /api/v1/users/phcb 200 305.023 ms Wed, 30 Aug 2023 11:38:46 GMT - {}
+
+GET /api/v1/users/phcb 200 306.005 ms Wed, 30 Aug 2023 11:38:46 GMT - {}
+
+POST /api/v1/users/auth/signin 400 348.577 ms Wed, 30 Aug 2023 11:40:50 GMT - {"email":"clementadebayo1@gmail.com","password":"Christ123@"}
+
+POST /api/v1/users/auth/signin 400 381.873 ms Wed, 30 Aug 2023 11:46:17 GMT - {"email":"clementadebayo1@gmail.com","password":"Christ123@"}
+
+POST /api/v1/users/auth/signin 400 326.235 ms Wed, 30 Aug 2023 11:48:38 GMT - {"email":"clementadebayo1@gmail.com","password":"Christ123@"}
+
+POST /api/v1/users/auth/signin 400 356.463 ms Wed, 30 Aug 2023 11:49:01 GMT - {"email":"odavidbolaji14@gmail.com","password":"Christ123@"}
+
+POST /api/v1/users/auth/signup 400 2.218 ms Wed, 30 Aug 2023 11:50:27 GMT - {"email":"odavidbolaji14@gmail.com","password":"bolajidavid1992#"}
+
+GET /api/v1/users/lga 304 284.264 ms Wed, 30 Aug 2023 11:50:38 GMT - {}
+
+GET /api/v1/users/lga 200 295.277 ms Wed, 30 Aug 2023 11:50:38 GMT - {}
+
+GET /api/v1/users/middle 304 301.424 ms Wed, 30 Aug 2023 11:50:58 GMT - {}
+
+GET /api/v1/users/middle 200 253.231 ms Wed, 30 Aug 2023 11:50:58 GMT - {}
+
+GET /api/v1/users/lga 200 326.971 ms Wed, 30 Aug 2023 11:51:12 GMT - {}
+
+GET /api/v1/users/lga 304 340.183 ms Wed, 30 Aug 2023 11:51:12 GMT - {}
+
+GET /api/v1/users/lga 200 321.525 ms Wed, 30 Aug 2023 11:51:17 GMT - {}
+
+GET /api/v1/users/lga 304 346.345 ms Wed, 30 Aug 2023 11:51:17 GMT - {}
+
+GET /api/v1/users/middle 200 596.766 ms Wed, 30 Aug 2023 12:15:25 GMT - {}
+
+GET /api/v1/users/middle 200 949.982 ms Wed, 30 Aug 2023 12:15:25 GMT - {}
+
+GET /api/v1/users/lga 200 1166.196 ms Wed, 30 Aug 2023 12:15:30 GMT - {}
+
+GET /api/v1/users/lga 200 2123.667 ms Wed, 30 Aug 2023 12:15:31 GMT - {}
+
+POST /api/v1/users/auth/signup 400 25.757 ms Wed, 30 Aug 2023 12:16:10 GMT - {"email":"clementadebayo1@gmail.com","password":"Christ123@"}
+
+POST /api/v1/users/auth/signup 400 4.168 ms Wed, 30 Aug 2023 12:18:50 GMT - {"email":"odavidbolaji14@gmail.com","password":"davidbolaji1992#"}
+
+POST /api/v1/users/auth/signup 400 24.640 ms Wed, 30 Aug 2023 12:22:25 GMT - {"email":"clementadebayo1@gmail.com","password":"Christ123@"}
+
+POST /api/v1/users/auth/signup 400 5.656 ms Wed, 30 Aug 2023 12:23:10 GMT - {"email":"odavidbolaji14@gmail.com","password":"bolajidavid1992"}
+
+POST /api/v1/users/auth/signup 400 28.398 ms Wed, 30 Aug 2023 12:24:51 GMT - {"email":"odavidbolaji14@gmail.com","password":"bolajidavid1992"}
+
+POST /api/v1/users/auth/signup 200 114.314 ms Wed, 30 Aug 2023 12:26:09 GMT - {"email":"odavidbolaji14@gmail.com","password":"bolajidavid1992"}
+
+POST /api/v1/users/auth/signin 400 19.817 ms Wed, 30 Aug 2023 12:27:28 GMT - {"email":"odavidbolaji14@gmail.com","password":"bolajidavid1992"}
+
+POST /api/v1/users/auth/signin 200 146.609 ms Wed, 30 Aug 2023 12:29:04 GMT - {"email":"odavidbolaji14@gmail.com","password":"bolajidavid1992"}
+
+GET /api/v1/users/lga 304 1066.940 ms Wed, 30 Aug 2023 12:29:23 GMT - {}
+
+GET /api/v1/users/lga 304 720.344 ms Wed, 30 Aug 2023 12:29:24 GMT - {}
+
+GET /api/v1/users/lga 304 773.662 ms Wed, 30 Aug 2023 12:29:48 GMT - {}
+
+GET /api/v1/users/lga 304 652.778 ms Wed, 30 Aug 2023 12:29:49 GMT - {}
+
+GET /api/v1/users/lga 304 748.568 ms Wed, 30 Aug 2023 12:31:18 GMT - {}
+
+GET /api/v1/users/lga 304 533.760 ms Wed, 30 Aug 2023 12:31:18 GMT - {}
+
+GET /api/v1/users/lga 304 604.644 ms Wed, 30 Aug 2023 12:31:21 GMT - {}
+
+GET /api/v1/users/lga 304 562.122 ms Wed, 30 Aug 2023 12:31:22 GMT - {}
+
+GET /api/v1/users/lga 304 821.881 ms Wed, 30 Aug 2023 12:31:58 GMT - {}
+
+GET /api/v1/users/lga 304 573.707 ms Wed, 30 Aug 2023 12:31:58 GMT - {}
+
+GET /api/v1/users/lga 304 694.269 ms Wed, 30 Aug 2023 12:32:03 GMT - {}
+
+GET /api/v1/users/lga 304 914.497 ms Wed, 30 Aug 2023 12:32:04 GMT - {}
+
+GET /api/v1/users/lga 304 778.530 ms Wed, 30 Aug 2023 12:33:17 GMT - {}
+
+GET /api/v1/users/lga 304 608.984 ms Wed, 30 Aug 2023 12:33:18 GMT - {}
+
+GET /api/v1/users/lga 304 789.217 ms Wed, 30 Aug 2023 12:34:53 GMT - {}
+
+GET /api/v1/users/lga 304 524.735 ms Wed, 30 Aug 2023 12:34:53 GMT - {}
+
+GET /api/v1/users/lga 304 905.499 ms Wed, 30 Aug 2023 12:37:18 GMT - {}
+
+GET /api/v1/users/lga 304 560.155 ms Wed, 30 Aug 2023 12:37:18 GMT - {}
+
+GET /api/v1/users/lga 304 721.495 ms Wed, 30 Aug 2023 12:38:18 GMT - {}
+
+GET /api/v1/users/lga 304 525.324 ms Wed, 30 Aug 2023 12:38:18 GMT - {}
+
+GET /api/v1/users/lga 304 768.706 ms Wed, 30 Aug 2023 12:41:02 GMT - {}
+
+GET /api/v1/users/lga 304 561.429 ms Wed, 30 Aug 2023 12:41:02 GMT - {}
+
+POST /api/v1/users/auth/signout 401 57.683 ms Wed, 30 Aug 2023 12:41:03 GMT - {}
+
+GET /api/v1/users/middle 304 488.704 ms Wed, 30 Aug 2023 12:43:19 GMT - {}
+
+GET /api/v1/users/middle 304 272.988 ms Wed, 30 Aug 2023 12:43:19 GMT - {}
+
+GET /api/v1/users/lga 304 704.482 ms Wed, 30 Aug 2023 12:43:22 GMT - {}
+
+GET /api/v1/users/lga 304 564.178 ms Wed, 30 Aug 2023 12:43:22 GMT - {}
+
+POST /api/v1/users/auth/signout 200 85.087 ms Wed, 30 Aug 2023 12:43:24 GMT - {}
+
+GET /api/v1/users/lga 304 840.786 ms Wed, 30 Aug 2023 12:43:25 GMT - {}
+
+GET /api/v1/users/lga 304 636.956 ms Wed, 30 Aug 2023 12:43:26 GMT - {}
+
+POST /api/v1/users/auth/signin 200 87.445 ms Wed, 30 Aug 2023 12:45:01 GMT - {"email":"odavidbolaji14@gmail.com","password":"bolajidavid1992"}
+
+GET /api/v1/users/lga 304 761.875 ms Wed, 30 Aug 2023 12:45:05 GMT - {}
+
+GET /api/v1/users/lga 304 542.983 ms Wed, 30 Aug 2023 12:45:06 GMT - {}
+
+POST /api/v1/users/auth/signout 200 110.415 ms Wed, 30 Aug 2023 12:47:56 GMT - {}
+
+GET /api/v1/users/lga 304 1071.038 ms Wed, 30 Aug 2023 12:47:57 GMT - {}
+
+GET /api/v1/users/lga 304 528.419 ms Wed, 30 Aug 2023 12:47:58 GMT - {}
+
+POST /api/v1/users/auth/signin 200 122.325 ms Wed, 30 Aug 2023 12:52:33 GMT - {"email":"odavidbolaji14@gmail.com","password":"bolajidavid1992"}
+
+GET /api/v1/users/lga 304 844.971 ms Wed, 30 Aug 2023 12:52:36 GMT - {}
+
+GET /api/v1/users/lga 304 501.129 ms Wed, 30 Aug 2023 12:52:36 GMT - {}
+
+POST /api/v1/users/auth/signout 200 56.182 ms Wed, 30 Aug 2023 12:52:40 GMT - {}
+
+GET /api/v1/users/lga 304 726.019 ms Wed, 30 Aug 2023 12:52:41 GMT - {}
+
+GET /api/v1/users/lga 304 585.026 ms Wed, 30 Aug 2023 12:52:41 GMT - {}
+
+GET /api/v1/users/lga 200 329.759 ms Wed, 30 Aug 2023 14:25:16 GMT - {}
+
+GET /api/v1/users/lga 304 293.522 ms Wed, 30 Aug 2023 14:25:17 GMT - {}
+
+POST /api/v1/users/auth/signin 200 807.903 ms Wed, 30 Aug 2023 14:25:29 GMT - {"email":"odavidbolaji14@gmail.com","password":"bolajidavid1992"}
+
+GET /api/v1/users/lga 304 275.476 ms Wed, 30 Aug 2023 14:25:32 GMT - {}
+
+GET /api/v1/users/lga 200 289.932 ms Wed, 30 Aug 2023 14:25:32 GMT - {}
+
+GET /api/v1/users/middle 200 285.743 ms Wed, 30 Aug 2023 14:25:42 GMT - {}
+
+GET /api/v1/users/middle 200 284.228 ms Wed, 30 Aug 2023 14:25:42 GMT - {}
+
+GET /api/v1/users/lga 304 293.002 ms Wed, 30 Aug 2023 14:25:44 GMT - {}
+
+GET /api/v1/users/lga 200 335.374 ms Wed, 30 Aug 2023 14:25:44 GMT - {}
+
+POST /api/v1/users/auth/signout 200 1179.510 ms Wed, 30 Aug 2023 14:25:49 GMT - {}
+
+GET /api/v1/users/lga 304 269.669 ms Wed, 30 Aug 2023 14:25:49 GMT - {}
+
+GET /api/v1/users/lga 200 277.491 ms Wed, 30 Aug 2023 14:25:49 GMT - {}
+
+POST /api/v1/users/create/lga 201 299.798 ms Wed, 30 Aug 2023 14:26:15 GMT - {"staffId":"AASA OLUWASEGUN FELIX - 11775","sex":"male","phoneNumber":"12345672723","penNumber":"984346152615","LGA":"Ede North","pfa":"First Guarantee Pensions"}
+
+GET /api/v1/users/lga 200 294.979 ms Wed, 30 Aug 2023 14:26:32 GMT - {}
+
+POST /api/v1/users/auth/signin 200 664.956 ms Wed, 30 Aug 2023 14:26:41 GMT - {"email":"odavidbolaji14@gmail.com","password":"bolajidavid1992"}
+
+GET /api/v1/users/lga 304 296.803 ms Wed, 30 Aug 2023 14:26:44 GMT - {}
+
+GET /api/v1/users/lga 200 301.154 ms Wed, 30 Aug 2023 14:26:44 GMT - {}
+
+GET /api/v1/users/middle 304 282.076 ms Wed, 30 Aug 2023 14:27:06 GMT - {}
+
+GET /api/v1/users/middle 200 286.699 ms Wed, 30 Aug 2023 14:27:06 GMT - {}
+
+GET /api/v1/users/lga 200 474.044 ms Wed, 30 Aug 2023 14:27:09 GMT - {}
+
+GET /api/v1/users/lga 304 474.750 ms Wed, 30 Aug 2023 14:27:09 GMT - {}
+
+GET /api/v1/users/middle 304 846.599 ms Wed, 30 Aug 2023 14:27:28 GMT - {}
+
+GET /api/v1/users/middle 200 826.740 ms Wed, 30 Aug 2023 14:27:28 GMT - {}
+
+GET /api/v1/users/lga 200 315.721 ms Wed, 30 Aug 2023 14:28:10 GMT - {}
+
+GET /api/v1/users/lga 304 313.308 ms Wed, 30 Aug 2023 14:28:10 GMT - {}
+
+GET /api/v1/users/lga 200 314.593 ms Wed, 30 Aug 2023 14:40:15 GMT - {}
+
+GET /api/v1/users/lga 304 283.179 ms Wed, 30 Aug 2023 14:40:22 GMT - {}
+
+GET /api/v1/users/lga 304 275.575 ms Wed, 30 Aug 2023 14:40:27 GMT - {}
+
+GET /api/v1/users/lga 304 984.944 ms Wed, 30 Aug 2023 14:40:35 GMT - {}
+
+GET /api/v1/users/lga 304 300.443 ms Wed, 30 Aug 2023 14:41:11 GMT - {}
+
+GET /api/v1/users/lga 304 291.383 ms Wed, 30 Aug 2023 14:42:36 GMT - {}
+
+GET /api/v1/users/lga 304 282.796 ms Wed, 30 Aug 2023 14:42:45 GMT - {}
+
+GET /api/v1/users/lga 304 1231.472 ms Wed, 30 Aug 2023 14:45:38 GMT - {}
+
+DELETE /api/v1/users/delete/lga/64ef518743240bc6ee22d592 200 595.083 ms Wed, 30 Aug 2023 14:45:48 GMT - {}
+
+GET /api/v1/users/lga 304 295.278 ms Wed, 30 Aug 2023 14:45:49 GMT - {}
+
+GET /api/v1/users/lga 304 289.842 ms Wed, 30 Aug 2023 14:46:10 GMT - {}
+
+GET /api/v1/users/lga 200 327.741 ms Wed, 30 Aug 2023 14:46:10 GMT - {}
+
+DELETE /api/v1/users/delete/lga/64ef518743240bc6ee22d592 200 745.918 ms Wed, 30 Aug 2023 14:47:32 GMT - {}
+
+GET /api/v1/users/lga 200 315.205 ms Wed, 30 Aug 2023 14:47:32 GMT - {}
+
+GET /api/v1/users/middle 200 273.911 ms Wed, 30 Aug 2023 14:47:46 GMT - {}
+
+GET /api/v1/users/middle 304 281.083 ms Wed, 30 Aug 2023 14:47:46 GMT - {}
+
+GET /api/v1/users/lga 304 290.102 ms Wed, 30 Aug 2023 14:47:47 GMT - {}
+
+GET /api/v1/users/lga 200 272.717 ms Wed, 30 Aug 2023 14:47:47 GMT - {}
+
+POST /api/v1/users/auth/signout 200 1000.002 ms Wed, 30 Aug 2023 14:47:51 GMT - {}
+
+GET /api/v1/users/lga 304 317.015 ms Wed, 30 Aug 2023 14:47:51 GMT - {}
+
+GET /api/v1/users/lga 200 298.868 ms Wed, 30 Aug 2023 14:47:51 GMT - {}
+
+GET /api/v1/users/lga 304 277.014 ms Wed, 30 Aug 2023 14:48:00 GMT - {}
+
+GET /api/v1/users/lga 200 289.850 ms Wed, 30 Aug 2023 14:48:00 GMT - {}
+
